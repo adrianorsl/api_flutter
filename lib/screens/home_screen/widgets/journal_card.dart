@@ -18,7 +18,9 @@ class JournalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     if (journal != null) {
       return InkWell(
-        onTap: () {},
+        onTap: () {
+          editJournalScreen(context);
+        },
         child: Container(
           height: 115,
           margin: const EdgeInsets.all(8),
@@ -92,7 +94,7 @@ class JournalCard extends StatelessWidget {
           height: 115,
           alignment: Alignment.center,
           child: Text(
-            "${WeekDay(showedDate.weekday).short} - ${showedDate.day}",
+            "${WeekDay(showedDate.weekday).short} - ${showedDate.day} - ${showedDate.month}",
             style: const TextStyle(fontSize: 12),
             textAlign: TextAlign.center,
           ),
@@ -109,6 +111,30 @@ class JournalCard extends StatelessWidget {
         id: const Uuid().v1(),
         content: "",
         createdAt: showedDate,
+        updatedAt: showedDate,
+      ),
+    ).then((value) {
+      refreshFunction();
+      if (value != null && value == true) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Registrado!")),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Falha ao registrar...")),
+        );
+      }
+    });
+  }
+
+  editJournalScreen(BuildContext context) {
+    Navigator.pushNamed(
+      context,
+      'add-journal',
+      arguments: Journal(
+        id: const Uuid().v1(),
+        content: "",
+        createdAt: journal!.createdAt,
         updatedAt: showedDate,
       ),
     ).then((value) {
