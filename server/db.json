@@ -4,34 +4,22 @@
   },
   "journals": [
     {
-      "id": "19ff3610-7a7d-11ed-bdd4-a914728c2151",
-      "content": "Sextou!!!",
-      "created_at": "2022-12-02 21:25:08.871806",
-      "updated_at": "2022-12-02 21:25:08.871806"
+      "id": "c5724420-7adb-11ed-9854-a97baa77149d",
+      "content": "Teste",
+      "created_at": "2022-12-14 08:46:02.979402",
+      "updated_at": "2022-12-14 08:46:02.979402"
     },
     {
-      "id": "252efb10-7a7d-11ed-bdd4-a914728c2151",
-      "content": "Sextou!!!",
-      "created_at": "2022-12-02 21:25:08.871806",
-      "updated_at": "2022-12-02 21:25:08.871806"
+      "id": "d11193d0-7adb-11ed-9854-a97baa77149d",
+      "content": "Teste",
+      "created_at": "2022-12-24 08:46:02.979402",
+      "updated_at": "2022-12-24 08:46:02.979402"
     },
     {
-      "id": "2eddec70-7a7d-11ed-bdd4-a914728c2151",
-      "content": "Sabadou!!!",
-      "created_at": "2022-12-03 21:25:08.871806",
-      "updated_at": "2022-12-03 21:25:08.871806"
-    },
-    {
-      "id": "c4e7b1a0-7a7e-11ed-bdd4-a914728c2151",
-      "content": "Dia de trabalhar :(",
-      "created_at": "2022-12-05 21:25:08.871806",
-      "updated_at": "2022-12-05 21:25:08.871806"
-    },
-    {
-      "id": "e3e495f0-7a7e-11ed-bdd4-a914728c2151",
-      "content": "Sextou Denovo",
-      "created_at": "2022-12-09 21:25:08.871806",
-      "updated_at": "2022-12-09 21:25:08.871806"
+      "id": "bb5977f0-7adc-11ed-bfb8-9f4484732cb5",
+      "content": "Teste",
+      "created_at": "2022-12-15 08:53:08.456087",
+      "updated_at": "2022-12-15 08:53:08.456087"
     }
   ]
 }

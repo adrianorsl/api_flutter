@@ -20,7 +20,7 @@ List<JournalCard> generateListJournalCards({
 
   //Preenche os espaços que possuem entradas no banco
   database.forEach((key, value) {
-    if (value.createdAt.isAfter(currentDay.add(Duration(days: windowPage)))) {
+    if (value.createdAt.isBefore(currentDay.add(Duration(days: windowPage)))) {
       int difference = value.createdAt
           .difference(currentDay.add(Duration(days: windowPage)))
           .inDays
