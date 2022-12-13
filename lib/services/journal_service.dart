@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:http_interceptor/http/http.dart';
 
 class JournalService {
-  static const String url = "http://192.168.100.5:3000/";
+  static const String url = "http://172.16.2.204:3000/";
   static const String resourse = "journals/";
 
   http.Client client =
