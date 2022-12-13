@@ -26,7 +26,7 @@ class JournalCard extends StatelessWidget {
           margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             border: Border.all(
-              color: Colors.black87,
+              color: Color.fromARGB(221, 8, 8, 8),
             ),
           ),
           child: Row(
@@ -38,7 +38,7 @@ class JournalCard extends StatelessWidget {
                     width: 75,
                     alignment: Alignment.center,
                     decoration: const BoxDecoration(
-                      color: Colors.black54,
+                      color: Color.fromARGB(136, 34, 2, 151),
                       border: Border(
                           right: BorderSide(color: Colors.black87),
                           bottom: BorderSide(color: Colors.black87)),
@@ -61,7 +61,7 @@ class JournalCard extends StatelessWidget {
                         right: BorderSide(color: Colors.black87),
                       ),
                     ),
-                    padding: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(11),
                     child: Text(WeekDay(journal!.createdAt.weekday).short),
                   ),
                 ],
@@ -95,7 +95,7 @@ class JournalCard extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             "${WeekDay(showedDate.weekday).short} - ${showedDate.day} - ${showedDate.month}",
-            style: const TextStyle(fontSize: 12),
+            style: const TextStyle(fontSize: 20, color: Colors.black),
             textAlign: TextAlign.center,
           ),
         ),
